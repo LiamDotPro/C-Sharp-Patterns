@@ -1,0 +1,7 @@
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\bin\Debug\patterns.exe.config
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\bin\Debug\patterns.exe
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\bin\Debug\patterns.pdb
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\obj\Debug\patterns.csprojResolveAssemblyReference.cache
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\obj\Debug\patterns.csproj.CoreCompileInputs.cache
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\obj\Debug\patterns.exe
+C:\Users\li\Documents\GitHub\C-Sharp-Patterns\patterns\patterns\obj\Debug\patterns.pdb
