@@ -45,11 +45,15 @@
     <Compile Include="Patterns\Decorator\Component.cs" />
     <Compile Include="Patterns\Decorator\DecoratorA.cs" />
     <Compile Include="Patterns\Decorator\IComponent.cs" />
+    <Compile Include="Patterns\Inheritance\BankAccount.cs" />
+    <Compile Include="Patterns\Inheritance\IAccountable.cs" />
+    <Compile Include="Patterns\Inheritance\SavingsAccount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
