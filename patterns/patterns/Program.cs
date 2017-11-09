@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using patterns.Patterns.Decorator;
 using patterns.Patterns.Inheritance;
+using patterns.Patterns.Proxy;
 
 namespace patterns
 {
@@ -16,13 +17,19 @@ namespace patterns
         static void Main(string[] args)
         {
             // Basic Inheritance
-            Inheritance();
+            //Inheritance();
+
             // Decorator - 1 
-            SimpleDecorator();
+            // SimpleDecorator();
+
+            // Proxy - 2
+            SimpleProxy();
         }
 
-        private static void Inheritance() {
+        private static void Inheritance()
+        {
             IAccountable SavingsAcc = new SavingsAccount("Barclays", 0.2, "Liam", 20000);
+            Console.ReadLine();
         }
 
         private static void SimpleDecorator()
@@ -61,7 +68,19 @@ namespace patterns
              * or build up off. Typically if you can see that you are lightly to decorate any more than off the orginal
              * you have to remeber that another layer will not have access to the orginal object, In this case you'd find
              * more success using something like the strategy pattern.
-             */ 
+             */
+        }
+
+        private static void SimpleProxy()
+        {
+            ISubject subject = new Proxy();
+            Console.WriteLine(subject.Request());
+            Console.ReadLine();
+
+            ProtectedProxy protectedSubject = new ProtectedProxy();
+            Console.WriteLine(protectedSubject.Request());
+            Console.WriteLine(protectedSubject.Authenticate("DumDeeDa"));
+            Console.ReadLine();
         }
     }
 }

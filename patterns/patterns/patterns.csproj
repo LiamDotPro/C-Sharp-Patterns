@@ -48,6 +48,10 @@
     <Compile Include="Patterns\Inheritance\BankAccount.cs" />
     <Compile Include="Patterns\Inheritance\IAccountable.cs" />
     <Compile Include="Patterns\Inheritance\SavingsAccount.cs" />
+    <Compile Include="Patterns\Proxy\ISubject.cs" />
+    <Compile Include="Patterns\Proxy\ProtectedProxy.cs" />
+    <Compile Include="Patterns\Proxy\Proxy.cs" />
+    <Compile Include="Patterns\Proxy\Subject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
