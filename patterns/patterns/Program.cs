@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using patterns.Patterns.Decorator;
 using patterns.Patterns.Inheritance;
 using patterns.Patterns.Proxy;
+using patterns.Patterns.bridge;
 
 namespace patterns
 {
@@ -26,7 +27,8 @@ namespace patterns
             // SimpleProxy();
 
             // Access Modifiers
-
+            // Check out the identifiers below 
+            // AccessModifiers();
         }
 
         private static void Inheritance()
@@ -115,11 +117,13 @@ namespace patterns
             // not be accesible to projects outside of this assembly.
             protected string _prot = "Protected Value";
 
+            // Limited in scope to the current assembly, note without a prefix modifier this can be used to derive functionality
+            // in derived classes that exstend it.
             internal int Num = 22;
 
+            // 
             protected internal double _double = 22.00;
 
-            
         }
     }
 }

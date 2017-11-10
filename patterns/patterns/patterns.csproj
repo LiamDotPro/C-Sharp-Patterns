@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\bridge\Abstraction.cs" />
+    <Compile Include="Patterns\bridge\Client.cs" />
     <Compile Include="Patterns\Decorator\Component.cs" />
     <Compile Include="Patterns\Decorator\DecoratorA.cs" />
     <Compile Include="Patterns\Decorator\IComponent.cs" />
