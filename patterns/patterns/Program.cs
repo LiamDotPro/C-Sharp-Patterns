@@ -23,7 +23,10 @@ namespace patterns
             // SimpleDecorator();
 
             // Proxy - 2
-            SimpleProxy();
+            // SimpleProxy();
+
+            // Access Modifiers
+
         }
 
         private static void Inheritance()
@@ -71,6 +74,15 @@ namespace patterns
              */
         }
 
+        /***
+         * In the case of a proxy class within c# it feels prudent to say that the they essentially
+         * just encapsulate further functionality or protect sensitive data.
+         * 
+         * It's also useful to assert that you could use this pattern as a means to encapsulate high
+         * risk classes and functionality within a sophisticated build where there is continous development
+         * where developers are exspected to decorate or stategy out functionality.
+         * 
+         ***/
         private static void SimpleProxy()
         {
             ISubject subject = new Proxy();
@@ -81,6 +93,33 @@ namespace patterns
             Console.WriteLine(protectedSubject.Request());
             Console.WriteLine(protectedSubject.Authenticate("DumDeeDa"));
             Console.ReadLine();
+        }
+
+        /**
+         * We have lots of good examples of Public and Private access modifers so I have choose to omit them.
+         * 
+         * This will be just a simple introduction to the modifers with descriptions.
+         */
+        private static void AccessModifiers()
+        {
+
+        }
+
+        /**
+         * Small side note that classes can not be encapsulated into local scope, though it's likely to be possible
+         * using closures and then refferencing the variable as a local type if you have to work within the same package.
+         */
+        public class Modifers
+        {
+            // Protected is limited in scope to the project and it's derived classes, this however means that it shall
+            // not be accesible to projects outside of this assembly.
+            protected string _prot = "Protected Value";
+
+            internal int Num = 22;
+
+            protected internal double _double = 22.00;
+
+            
         }
     }
 }
