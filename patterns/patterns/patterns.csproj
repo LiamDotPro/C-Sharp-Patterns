@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patterns\bridge\Abstraction.cs" />
-    <Compile Include="Patterns\bridge\Client.cs" />
+    <Compile Include="Patterns\bridge\IBridge.cs" />
+    <Compile Include="Patterns\bridge\ImplementationA.cs" />
+    <Compile Include="Patterns\bridge\ImplementationB.cs" />
     <Compile Include="Patterns\Decorator\Component.cs" />
     <Compile Include="Patterns\Decorator\DecoratorA.cs" />
     <Compile Include="Patterns\Decorator\IComponent.cs" />

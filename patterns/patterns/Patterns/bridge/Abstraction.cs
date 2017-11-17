@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace patterns.Patterns.bridge
 {
-    abstract class Abstraction
+    class Abstraction
     {
-      
+        IBridge bridge;
+
+        public Abstraction(IBridge Implemntation) {
+            bridge = Implemntation;
+        }
+
+        public string Operation() {
+            return bridge.OperationImp();
+        }
     }
 }

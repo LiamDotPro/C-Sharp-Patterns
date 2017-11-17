@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace patterns.Patterns.bridge
 {
-    public class Client
+    interface IBridge
     {
-
+        string OperationImp();
     }
 }
